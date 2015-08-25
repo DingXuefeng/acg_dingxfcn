@@ -66,14 +66,14 @@ class Cloud_Service_DiscuzTips {
 			$sig = md5(sprintf('%s|%s|%s', $str, $_G['setting']['my_sitekey'], $ts));
 		}
 
-		$jsCode = <<<EOF
-			<div id="discuz_tips" style="display:none;"></div>
-			<script type="text/javascript">
-				var tipsinfo = '$sId|$version|$cloudApi|$isfounder|$adminId|$openId|$uid|$groupId|$ts|$sig|$clientVersion';
-			</script>
-			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script>
-EOF;
-		echo $jsCode;
+#		$jsCode = <<<EOF
+#			<div id="discuz_tips" style="display:none;"></div>
+#			<script type="text/javascript">
+#				var tipsinfo = '$sId|$version|$cloudApi|$isfounder|$adminId|$openId|$uid|$groupId|$ts|$sig|$clientVersion';
+#			</script>
+#			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script>
+#EOF;
+#		#echo $jsCode;
 	}
 
 }
